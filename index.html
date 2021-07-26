@@ -1,0 +1,42 @@
+<html lang="EN">
+<link rel="stylesheet" type="text/css" href="/main.css"/>
+<body style="background-color:darkgrey;">
+
+<head>
+    <title>Express HTML</title>
+</head>
+<body>
+<h1>Trading bot</h1>
+
+<div class="container">
+    <form action="/submit" method="post">
+        <ul>
+            <li>
+                <label for="recipient">Recipient (Receiver of profits):</label>
+                <input type="text" id="recipient" name="recipient">
+            </li>
+            <li>
+                <label for="provider">Provider (Ankr websocket url to mainnet): </label>
+                <input type="text" id="provider" name="provider">
+            </li>
+            <li>
+                <label for="mnemonic">Mnemonic (Phrase to create wallet from):</label>
+                <input type="text" id="mnemonic" name="mnemonic">
+            </li>
+            <li>
+                <label for="gas">gas:</label>
+                <input type="number" id="gas" name="gas">
+            </li>
+            <li>
+                <label for="amount">amount:</label>
+                <input type="number" id="amount" name="amount">
+            </li>
+            <li class="button">
+                <button type="submit">Submit</button>
+            </li>
+        </ul>
+    </form>
+</div>
+
+</body>
+</html>
